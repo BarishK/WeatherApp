@@ -1,0 +1,57 @@
+.weatherInfo {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: -5px 0 10px rgba(0, 0, 0, 0.5);
+}
+
+.weatherAllDetails {
+  border-bottom: 1px solid white;
+  padding-bottom: 50px;
+}
+
+.weatherDetail {
+  display: flex;
+  justify-content: space-between;
+  opacity: 50%;
+}
+
+.locationInput {
+  position: relative;
+  display: inline-block;
+  width: 100%; /* istersen sabitle */
+}
+
+input {
+  width: 100%;
+  padding-right: 40px; /* ikona yer açmak için önemli */
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid white;
+  color: white;
+  border-radius: 8px;
+  height: 40px;
+  outline: none;
+  transition: 0.25s ease;
+}
+input:focus {
+  transform: scale(1.03); /* Biraz büyüt */
+  border-color: rgba(255, 255, 255, 0.6);
+}
+input::placeholder {
+  color: rgba(255, 255, 255, 0.6); /* istediğin renk */
+}
+
+.input-icon {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+
+  color: white;
+  font-size: 24px;
+}
+
+.input-icon:hover {
+  cursor: pointer;
+}
